@@ -1,19 +1,23 @@
+/* Style par defaut qui sera appliqué que lorsque les condition en dessous ne seront pas respectées */
 body {
     background-color: #88c1d0;
 }
-
-@media screen and (max-width: 1280px) {
+/* S'applique si l'écran est plus petit que 1280px */
+@media screen and (max-width: 1279px) {
   body {
     background-color: #ffffff
   }
 }
+/* Il s'applique lorsque la taille de l'écran est entre 1280px et 1680px*/
 @media screen and (min-width: 1280px) and (max-width: 1680px) {
   body {
     background-color: #275fa0
   }
 }
-@media screen and (min-width: 1680px) and (max-width: 1920px) {
+/* Il s'applique si l'écran est entre 1681px et 1920px */
+@media screen and (min-width: 1681px) and (max-width: 1920px) {
   body {
     background-color: #ffca4b;
   }
 }
+/* Pour des taillles d'écran supérieures à 1921px on aura le style par défaut */

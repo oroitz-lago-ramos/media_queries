@@ -1,3 +1,4 @@
+/* Configurons les rectangles  */
 section {
   background-color: #88c1d0;
   width: 350px;
@@ -9,6 +10,7 @@ body {
   display: flex;
 }
 
+/* lorsque l'écran est petit la direction de la flexbox deviendra en colonnes */
 @media screen and (max-width: 767px) {
   body {
     display: flex;
@@ -16,6 +18,7 @@ body {
     width: fit-content;
   }
 }
+/* Lorsque l'écran est moyen nous mettons en place une grille avec grid qui aura 2 colonnes et automatiquement deux lignes */
 @media screen and (min-width: 768px) and (max-width: 1599px) {
   body {
     display: grid;
@@ -23,6 +26,7 @@ body {
   }
 }
 
+/* Lorsque l'écran est grand nous mettons une flex classique en ligne */
 @media screen and (min-width: 1600px) {
   body {
     display: flex;
