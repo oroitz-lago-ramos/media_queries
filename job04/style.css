@@ -1,48 +1,55 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
 /*  Centre la navigation  */
 nav ul{
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 0;
 
 }
-/*  Organise les élements de la navigation    */
+/*  Oon donne du style aux élements de la navigation    */
 li{
     width: 7rem;
-    list-style-type: none;
+    padding: 10px;
+    border: 1px solid rgb(181, 180, 180);
+    display: flex;
+    justify-content: center;
+}
+/* Au survol on change la couleur du background */
+li:hover {
+  background-color: rgb(181, 180, 180);
+}
+li a { 
+  color: black;
 }
 
-
-
-
-
-    
-/*  Burger -    début   */
-
-* {
-    box-sizing: border-box;
-  }
-  
-  .burger {                     /*  la checkbox n'est pas affichée, on peut cliquer dessus pour afficher la ul */
+  /* Ceci servira a cacher la checkbox, elle restera tout de même clicable */
+  .burger {                  
     display: none;
   }
 
-  .burger:checked ~ ul {        /*  clic sur la checkbox, la ul s'affiche */
+  /*  Si la checkbox est cliquée alors on affiche la liste desordonnée  */
+  .burger:checked ~ ul {        
     display: flex;
 }
 
+/* Ceci est la représentation du bouton au lieu de laisser la checkbox seule, on modifie l'aspect du label */
   .hamburger {
     display:block;
-    width: 3.4em;
-    height: 2.4em;
-    line-height: .1em;
-    border: 0.1em solid black;
-    padding: 0 .4em .4em;
+    width: 3rem;
+    height: 2.7rem;
+    line-height: .1rem;
+    border: 0.1rem solid black;
+    padding: 0 .3rem .3rem;
   }
   
   .hamburger hr {
     color: #ddd;
-    height: .1em;
+    height: .1rem;
     border: 0;
     background: black;
     border: none;
